@@ -1,3 +1,4 @@
+````markdown
 # GymAsis – AI Gym Chatbot
 
 GymAsis is a gym-focused AI chatbot built in Python. It combines conversational AI, logical reasoning, image classification, voice interaction, and cloud-based recognition into one interactive system.
@@ -34,7 +35,7 @@ The chatbot can answer gym-related questions, check knowledge-based facts, class
 
 ## Project Structure
 
-
+```text
 GymAsis/
 │
 ├── main_chatbot.py              # Main chatbot controller
@@ -58,6 +59,7 @@ GymAsis/
 ├── dataset/                     # Training/testing image dataset
 ├── training_history.png         # CNN training graph
 └── requirements.txt             # Python dependencies
+````
 
 ## How It Works
 
@@ -71,6 +73,7 @@ For image recognition, the system includes a locally trained CNN model that clas
 
 ## Example Commands
 
+```text
 hi
 show kb
 listen
@@ -81,7 +84,7 @@ Check that squat trains legs
 I know that dumbbell is equipment
 Check that dumbbell is equipment
 quit
-
+```
 
 ## Running the Project
 
