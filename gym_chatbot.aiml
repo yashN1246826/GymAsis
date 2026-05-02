@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!--
+    gym_chatbot.aiml
+-->
+
+<!-- ============================================================ -->
+<!--  GREETINGS AND META                                          -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>HELLO</pattern>
+    <template>Hello! I am GymBot, your personal gym training assistant. Ask me about exercises, workout technique, muscle groups, recovery, or gym equipment!</template>
+</category>
+
+<category>
+    <pattern>HI</pattern>
+    <template>Hi there! Ready to talk training? I can help with exercise technique, workout planning, muscle groups, warm-up routines, and gym equipment. What do you want to know?</template>
+</category>
+
+<category>
+    <pattern>HI THERE</pattern>
+    <template>Hey! Welcome to GymBot. Ask me anything about gym training, exercises, recovery, or equipment. Let's get started!</template>
+</category>
+
+<category>
+    <pattern>WHAT CAN YOU DO</pattern>
+    <template>I can help you with: exercise technique, exercise definitions, muscle group information, workout planning, warm-up and cooldown routines, gym equipment guidance, and training recovery. Try asking me something!</template>
+</category>
+
+<category>
+    <pattern>WHAT CAN YOU HELP WITH</pattern>
+    <template>I specialise in gym training topics: correct exercise form, exercise definitions, muscle anatomy, beginner gym guidance, training splits, rest and recovery, warm-up routines, and gym equipment. Just ask me a question!</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  BASIC EXERCISE DEFINITIONS                                  -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>WHAT IS A SQUAT</pattern>
+    <template>A squat is a lower-body compound exercise where you bend your knees and hips to lower your body and then stand back up. It mainly trains the quadriceps, glutes, and hamstrings.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS SQUAT</pattern>
+    <template>A squat is a lower-body compound exercise where you bend your knees and hips to lower your body and then stand back up. It mainly trains the quadriceps, glutes, and hamstrings.</template>
+</category>
+
+<category>
+    <pattern>DEFINE SQUAT</pattern>
+    <template>A squat is a lower-body compound exercise where you bend your knees and hips to lower your body and then stand back up. It mainly trains the quadriceps, glutes, and hamstrings.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A DEADLIFT</pattern>
+    <template>A deadlift is a compound strength exercise where you lift a weight from the floor to hip level by driving through the legs and extending the hips. It is one of the best exercises for total-body strength.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS DEADLIFT</pattern>
+    <template>A deadlift is a compound strength exercise where you lift a weight from the floor to hip level by driving through the legs and extending the hips. It is one of the best exercises for total-body strength.</template>
+</category>
+
+<category>
+    <pattern>DEFINE DEADLIFT</pattern>
+    <template>A deadlift is a compound strength exercise where you lift a weight from the floor to hip level by driving through the legs and extending the hips. It is one of the best exercises for total-body strength.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A BENCH PRESS</pattern>
+    <template>A bench press is an upper-body compound exercise performed while lying on a bench and pressing a barbell or dumbbells upward. It mainly targets the chest, shoulders, and triceps.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS BENCH PRESS</pattern>
+    <template>A bench press is an upper-body compound exercise performed while lying on a bench and pressing a barbell or dumbbells upward. It mainly targets the chest, shoulders, and triceps.</template>
+</category>
+
+<category>
+    <pattern>DEFINE BENCH PRESS</pattern>
+    <template>A bench press is an upper-body compound exercise performed while lying on a bench and pressing a barbell or dumbbells upward. It mainly targets the chest, shoulders, and triceps.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A LUNGE</pattern>
+    <template>A lunge is a lower-body exercise where one leg steps forward, backward, or to the side while the body lowers under control. It mainly works the quadriceps, glutes, and hamstrings, while also challenging balance.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS LUNGE</pattern>
+    <template>A lunge is a lower-body exercise where one leg steps forward, backward, or to the side while the body lowers under control. It mainly works the quadriceps, glutes, and hamstrings, while also challenging balance.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A PUSH UP</pattern>
+    <template>A push-up is a bodyweight upper-body exercise where you lower your chest toward the floor and then press back up. It mainly trains the chest, shoulders, triceps, and core.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PUSH UP</pattern>
+    <template>A push-up is a bodyweight upper-body exercise where you lower your chest toward the floor and then press back up. It mainly trains the chest, shoulders, triceps, and core.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A PULL UP</pattern>
+    <template>A pull-up is an upper-body bodyweight exercise where you hang from a bar and pull your body upward until your chin clears the bar. It mainly trains the lats, biceps, and upper back.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PULL UP</pattern>
+    <template>A pull-up is an upper-body bodyweight exercise where you hang from a bar and pull your body upward until your chin clears the bar. It mainly trains the lats, biceps, and upper back.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A PLANK</pattern>
+    <template>A plank is a core stability exercise where you hold your body in a straight line while supporting yourself on your forearms or hands and toes. It mainly strengthens the core, shoulders, and glutes.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PLANK</pattern>
+    <template>A plank is a core stability exercise where you hold your body in a straight line while supporting yourself on your forearms or hands and toes. It mainly strengthens the core, shoulders, and glutes.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A SHOULDER PRESS</pattern>
+    <template>A shoulder press is an upper-body exercise where you press a weight overhead from shoulder level. It mainly targets the shoulders and triceps, while the core helps stabilise the movement.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS SHOULDER PRESS</pattern>
+    <template>A shoulder press is an upper-body exercise where you press a weight overhead from shoulder level. It mainly targets the shoulders and triceps, while the core helps stabilise the movement.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A ROW</pattern>
+    <template>A row is a pulling exercise where you bring a weight toward your torso by driving the elbows back. It mainly trains the upper back, lats, rear shoulders, and biceps.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS ROW</pattern>
+    <template>A row is a pulling exercise where you bring a weight toward your torso by driving the elbows back. It mainly trains the upper back, lats, rear shoulders, and biceps.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A BICEP CURL</pattern>
+    <template>A bicep curl is an isolation exercise where you bend the elbow to lift a weight toward your shoulder. It mainly targets the biceps.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS BICEP CURL</pattern>
+    <template>A bicep curl is an isolation exercise where you bend the elbow to lift a weight toward your shoulder. It mainly targets the biceps.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  HOW TO DO EXERCISES                                         -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>HOW DO I DO A SQUAT</pattern>
+    <template>To squat correctly: stand with your feet shoulder-width apart and toes slightly turned out. Brace your core, keep your chest up, push your hips back, and bend your knees. Lower in control, then push through your heels to stand back up.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I SQUAT</pattern>
+    <template>To squat correctly: stand with your feet shoulder-width apart and toes slightly turned out. Brace your core, keep your chest up, push your hips back, and bend your knees. Lower in control, then push through your heels to stand back up.</template>
+</category>
+
+<category>
+    <pattern>HOW CAN I DO A SQUAT</pattern>
+    <template>To perform a squat: feet shoulder-width apart, core braced, chest tall. Push hips back, bend knees, lower until comfortable, then stand by driving through your feet. Keep your knees tracking over your toes.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DO A DEADLIFT</pattern>
+    <template>To perform a deadlift: stand with the bar over your mid-foot, hinge at the hips, grip the bar just outside your legs, keep your back flat, and drive through your feet to stand up. Keep the bar close to your body throughout the movement.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DEADLIFT</pattern>
+    <template>To perform a deadlift: stand with the bar over your mid-foot, hinge at the hips, grip the bar just outside your legs, keep your back flat, and drive through your feet to stand up. Keep the bar close to your body throughout the movement.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DO A BENCH PRESS</pattern>
+    <template>For the bench press: lie flat on the bench, keep your feet planted, retract your shoulder blades, grip the bar slightly wider than shoulder-width, lower the bar to your mid-chest with control, then press it back up.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I BENCH PRESS</pattern>
+    <template>For the bench press: lie flat on the bench, keep your feet planted, retract your shoulder blades, grip the bar slightly wider than shoulder-width, lower the bar to your mid-chest with control, then press it back up.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DO A LUNGE</pattern>
+    <template>To do a lunge: stand tall, step one foot forward, lower your body until both knees are bent, keep your torso upright, then push through your front foot to return to the starting position.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DO A PUSH UP</pattern>
+    <template>To do a push-up: place your hands slightly wider than shoulder-width, keep your body in a straight line, lower your chest toward the floor by bending your elbows, then push back up. Keep your core tight throughout.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DO A PULL UP</pattern>
+    <template>To perform a pull-up: hang from the bar with an overhand grip, engage your core, pull your elbows down, and lift your chin above the bar. Lower yourself slowly and under control.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DO A PLANK</pattern>
+    <template>To do a plank: place your forearms or hands on the floor, extend your legs behind you, keep your body in a straight line from head to heels, and brace your core without letting your hips sag.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I DO A SHOULDER PRESS</pattern>
+    <template>To do a shoulder press: hold the weights at shoulder level, brace your core, press the weights overhead until your arms are extended, then lower them back down with control.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  EXERCISE DESCRIPTIONS / EXISTING LONGER ANSWERS             -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>TELL ME ABOUT SQUATS</pattern>
+    <template>The squat is a fundamental compound exercise targeting the quadriceps, glutes, and hamstrings. It also works the core and lower back as stabilisers. There are many squat variations: bodyweight squat, barbell back squat, front squat, goblet squat, and Bulgarian split squat. The squat is one of the best exercises for overall lower body strength and muscle development.</template>
+</category>
+
+<category>
+    <pattern>TELL ME ABOUT THE SQUAT</pattern>
+    <template>The squat is a full lower-body compound movement. The primary muscles worked are the quadriceps, glutes, and hamstrings. Supporting muscles include the core, erector spinae, and calves. It is considered one of the three powerlifting movements alongside the deadlift and bench press. Technique is critical — poor form can cause knee and lower back injury.</template>
+</category>
+
+<category>
+    <pattern>TELL ME ABOUT DEADLIFTS</pattern>
+    <template>The deadlift is a full-body compound movement and one of the most effective exercises for building strength. It primarily targets the posterior chain: hamstrings, glutes, and lower back. The traps, lats, forearms, and core are also heavily engaged. Variations include conventional, sumo, Romanian, and trap bar deadlift.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  MUSCLE GROUP QUESTIONS                                      -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>WHAT MUSCLES DO SQUATS WORK</pattern>
+    <template>Squats primarily work the quadriceps, glutes, and hamstrings. They also engage the core, lower back, adductors, and calves for stability.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DOES THE SQUAT WORK</pattern>
+    <template>The squat targets the quadriceps, glutes, and hamstrings as the main muscles, while the core and lower back help stabilise the movement.</template>
+</category>
+
+<category>
+    <pattern>WHICH MUSCLES DO SQUATS WORK</pattern>
+    <template>Squats mainly work the quadriceps, glutes, and hamstrings. They also recruit the core and lower back for support.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DO DEADLIFTS WORK</pattern>
+    <template>Deadlifts mainly work the glutes, hamstrings, lower back, and core. They also involve the upper back, traps, lats, and grip.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DOES THE DEADLIFT WORK</pattern>
+    <template>The deadlift works the hamstrings, glutes, lower back, core, traps, lats, and forearms. It is one of the best total-body strength exercises.</template>
+</category>
+
+<category>
+    <pattern>WHICH MUSCLES DO DEADLIFTS WORK</pattern>
+    <template>Deadlifts mainly train the glutes, hamstrings, lower back, and core, with support from the upper back and grip muscles.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DO BENCH PRESS WORK</pattern>
+    <template>The bench press mainly works the chest, shoulders, and triceps.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DOES THE BENCH PRESS WORK</pattern>
+    <template>The bench press primarily targets the chest, with secondary work from the shoulders and triceps.</template>
+</category>
+
+<category>
+    <pattern>WHICH MUSCLES DOES BENCH PRESS WORK</pattern>
+    <template>Bench press mainly trains the chest, shoulders, and triceps.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DO PULL UPS WORK</pattern>
+    <template>Pull-ups mainly work the lats, biceps, upper back, and rear shoulders. The core also helps stabilise your body.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DO PUSH UPS WORK</pattern>
+    <template>Push-ups mainly work the chest, shoulders, triceps, and core.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DO LUNGES WORK</pattern>
+    <template>Lunges mainly work the quadriceps, glutes, and hamstrings, while also improving balance and stability.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DO PLANKS WORK</pattern>
+    <template>Planks mainly work the core, but they also engage the shoulders, glutes, and lower back.</template>
+</category>
+
+<category>
+    <pattern>WHAT MUSCLES DO ROWS WORK</pattern>
+    <template>Rows mainly train the upper back, lats, rear shoulders, rhomboids, and biceps.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  MUSCLE GROUP DEFINITIONS                                    -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>WHAT ARE THE QUADRICEPS</pattern>
+    <template>The quadriceps are a group of four muscles at the front of the thigh. They are responsible for extending the knee and are heavily used in exercises like squats, lunges, and leg press.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE QUADRICEPS</pattern>
+    <template>The quadriceps are a group of four muscles at the front of the thigh. They are responsible for extending the knee and are heavily used in exercises like squats, lunges, and leg press.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE HAMSTRINGS</pattern>
+    <template>The hamstrings are a group of muscles at the back of the thigh. They help bend the knee and extend the hip, and are trained in exercises like deadlifts, Romanian deadlifts, and leg curls.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE HAMSTRINGS</pattern>
+    <template>The hamstrings are a group of muscles at the back of the thigh. They help bend the knee and extend the hip, and are trained in exercises like deadlifts and Romanian deadlifts.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE GLUTES</pattern>
+    <template>The glutes are the muscles of the buttocks. They are important for hip extension, stability, posture, and power in movements like squats, deadlifts, hip thrusts, and lunges.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE GLUTES</pattern>
+    <template>The glutes are the muscles of the buttocks. They are important for hip extension, stability, posture, and power in movements like squats, deadlifts, hip thrusts, and lunges.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE CHEST</pattern>
+    <template>The chest mainly refers to the pectoral muscles, especially the pectoralis major. These muscles are involved in pressing movements such as bench press, push-ups, and chest flyes.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE SHOULDERS</pattern>
+    <template>The shoulders mainly refer to the deltoid muscles. They help lift and rotate the arms and are trained in exercises like shoulder press, lateral raises, and upright rows.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE BACK</pattern>
+    <template>The back includes several muscles such as the lats, traps, rhomboids, and spinal erectors. These muscles help with posture, pulling movements, and spinal support.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE BICEPS</pattern>
+    <template>The biceps are muscles at the front of the upper arm. They are responsible for elbow flexion and are trained in exercises like curls, chin-ups, and rows.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE TRICEPS</pattern>
+    <template>The triceps are muscles at the back of the upper arm. They are responsible for elbow extension and are trained in exercises like bench press, dips, push-ups, and tricep extensions.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE CORE</pattern>
+    <template>The core refers to the muscles around your trunk, including the abdominals, obliques, and lower back muscles. The core helps stabilise the body during almost every exercise.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  GYM EQUIPMENT DEFINITIONS                                   -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>WHAT IS A BENCH</pattern>
+    <template>A bench is a piece of gym equipment used for exercises such as bench press, seated dumbbell exercises, step-ups, and tricep dips.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS BENCH</pattern>
+    <template>A bench is a piece of gym equipment used for exercises such as bench press, seated dumbbell exercises, step-ups, and tricep dips.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A DUMBBELL</pattern>
+    <template>A dumbbell is a short handheld weight used for strength training. It can be used one at a time or as a pair for many exercises.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS DUMBBELL</pattern>
+    <template>A dumbbell is a short handheld weight used for strength training. It can be used one at a time or as a pair for many exercises.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A BARBELL</pattern>
+    <template>A barbell is a long metal bar used for weight training exercises such as squats, deadlifts, bench press, rows, and overhead press.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS BARBELL</pattern>
+    <template>A barbell is a long metal bar used for weight training exercises such as squats, deadlifts, bench press, rows, and overhead press.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A KETTLEBELL</pattern>
+    <template>A kettlebell is a round weight with a handle. It is used for swings, goblet squats, presses, carries, and other strength and conditioning exercises.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS KETTLEBELL</pattern>
+    <template>A kettlebell is a round weight with a handle. It is used for swings, goblet squats, presses, carries, and other strength and conditioning exercises.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A SQUAT RACK</pattern>
+    <template>A squat rack is a gym station designed to hold a barbell safely for exercises such as squats, overhead press, and sometimes bench press. It includes adjustable hooks and safety bars.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS SQUAT RACK</pattern>
+    <template>A squat rack is a gym station designed to hold a barbell safely for exercises such as squats, overhead press, and sometimes bench press. It includes adjustable hooks and safety bars.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A TREADMILL</pattern>
+    <template>A treadmill is a cardio machine that allows you to walk, jog, or run indoors on a moving belt.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS TREADMILL</pattern>
+    <template>A treadmill is a cardio machine that allows you to walk, jog, or run indoors on a moving belt.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A ROWING MACHINE</pattern>
+    <template>A rowing machine is a cardio machine that simulates the rowing motion. It trains both the upper and lower body while also improving cardiovascular fitness.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS ROWING MACHINE</pattern>
+    <template>A rowing machine is a cardio machine that simulates the rowing motion. It trains both the upper and lower body while also improving cardiovascular fitness.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A PULL UP BAR</pattern>
+    <template>A pull-up bar is a horizontal bar used for bodyweight pulling exercises such as pull-ups, chin-ups, and hanging leg raises.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PULL UP BAR</pattern>
+    <template>A pull-up bar is a horizontal bar used for bodyweight pulling exercises such as pull-ups, chin-ups, and hanging leg raises.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  GYM EQUIPMENT USAGE                                         -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>WHAT IS A BARBELL USED FOR</pattern>
+    <template>A barbell is mainly used for compound strength exercises such as squats, deadlifts, bench press, overhead press, and rows. It allows heavier loading and is essential for progressive overload.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A DUMBBELL USED FOR</pattern>
+    <template>Dumbbells are used for many exercises including dumbbell press, curls, rows, shoulder raises, lunges, and Romanian deadlifts. They are especially useful for unilateral training.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A TREADMILL USED FOR</pattern>
+    <template>A treadmill is used for walking, jogging, running, warming up, and improving cardiovascular fitness. It is also useful for calorie burning and weight management.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  WARM-UP AND COOLDOWN                                        -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>HOW DO I WARM UP BEFORE LIFTING</pattern>
+    <template>A good warm-up before lifting includes 5 to 10 minutes of light cardio followed by dynamic stretches and a few lighter warm-up sets of your first exercise. This helps prepare your joints, muscles, and nervous system for training.</template>
+</category>
+
+<category>
+    <pattern>WHAT SHOULD I DO AFTER A WORKOUT</pattern>
+    <template>After a workout, do a short cooldown, rehydrate, stretch the muscles you trained, and eat a meal containing protein and carbohydrates. Good sleep is also very important for recovery.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I COOL DOWN AFTER TRAINING</pattern>
+    <template>A proper cooldown includes 5 minutes of light movement followed by static stretching for the muscles you trained. This helps gradually lower your heart rate and improve flexibility.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  TRAINING FREQUENCY                                          -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>HOW OFTEN SHOULD I TRAIN LEGS</pattern>
+    <template>For most people, training legs 2 times per week is a good balance between progress and recovery. Beginners on full-body programmes may train legs 3 times per week with lighter overall volume.</template>
+</category>
+
+<category>
+    <pattern>HOW OFTEN SHOULD I GO TO THE GYM</pattern>
+    <template>For general fitness and muscle building, 3 to 5 gym sessions per week is a strong target. Beginners usually do well with 3 sessions per week.</template>
+</category>
+
+<category>
+    <pattern>HOW MANY DAYS A WEEK SHOULD I TRAIN</pattern>
+    <template>Beginners usually train 3 days per week, intermediate lifters often train 4 days per week, and more advanced lifters may train 5 or 6 days depending on programme design and recovery.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  BEGINNER GUIDANCE                                           -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>I AM A BEGINNER AT THE GYM</pattern>
+    <template>As a beginner, focus on learning the fundamental compound exercises, using light weights, and building consistency. Training 3 times per week with a simple full-body programme is a strong starting point.</template>
+</category>
+
+<category>
+    <pattern>WHERE DO I START AT THE GYM</pattern>
+    <template>Start by learning the basic compound exercises such as squat, deadlift, bench press, row, and overhead press. Use light weights, focus on technique, and follow a simple structured beginner programme.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  RECOVERY AND MUSCLE SORENESS                                -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>WHY ARE MY MUSCLES SORE AFTER THE GYM</pattern>
+    <template>Muscle soreness after training is often DOMS, which stands for Delayed Onset Muscle Soreness. It happens after challenging exercise and usually fades within a few days.</template>
+</category>
+
+<category>
+    <pattern>HOW LONG SHOULD I REST BETWEEN WORKOUTS</pattern>
+    <template>You should usually allow at least 48 hours before training the same muscle group again. Recovery depends on training intensity, volume, sleep, and nutrition.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  GENERAL TRAINING DEFINITIONS                                -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>WHAT IS A COMPOUND EXERCISE</pattern>
+    <template>A compound exercise is a movement that uses multiple joints and muscle groups at the same time. Examples include squats, deadlifts, bench press, rows, and pull-ups.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PROGRESSIVE OVERLOAD</pattern>
+    <template>Progressive overload means gradually increasing the training challenge over time by adding weight, reps, sets, or improving technique so that your body keeps adapting.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  GOODBYE                                                     -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>BYE</pattern>
+    <template>Goodbye! Keep training hard and stay consistent. Remember — progress comes from showing up. Good luck!</template>
+</category>
+
+<category>
+    <pattern>GOODBYE</pattern>
+    <template>See you next time! Stay consistent, train smart, and recover well. Goodbye!</template>
+</category>
+
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>You're welcome! Good luck with your training. Feel free to ask me anything else about gym exercises, technique, or recovery.</template>
+</category>
+
+<category>
+    <pattern>THANKS</pattern>
+    <template>No problem! Keep training consistently and the results will come. Ask me anything else anytime.</template>
+</category>
+
+<!-- ============================================================ -->
+<!--  WILDCARD FALLBACK — routes to similarity matcher in Python  -->
+<!-- ============================================================ -->
+
+<category>
+    <pattern>*</pattern>
+    <template>SIMILARITY_FALLBACK</template>
+</category>
+
+</aiml>

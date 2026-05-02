@@ -1,0 +1,28 @@
+# requirements.txt
+# GymBot — Gym Training Chatbot (NTU ISYS30221)
+# Install: pip install -r requirements.txt
+# Python 3.9 or 3.10 recommended
+
+# AIML pattern matching (Task-a)
+python-aiml==0.9.3
+
+# NLP: lemmatisation, FOL, stopwords (Tasks a and b)
+nltk==3.9.1
+
+# Data and ML
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+
+# CNN image classification (Task-c)
+# --- Mac M1/M2/M3 (Apple Silicon) ---
+tensorflow-macos
+tensorflow-metal
+# --- Windows / Linux / Intel Mac: replace above two lines with: ---
+# tensorflow>=2.12.0
+
+# Image processing
+Pillow>=9.0.0
+
+# Plotting training history
+matplotlib>=3.6.0

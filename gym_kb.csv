@@ -1,0 +1,86 @@
+# gym_kb.csv
+# ============================================================
+# Knowledge Base — Gym Training Chatbot (NTU ISYS30221)
+# ============================================================
+# Written in NLTK First-Order Logic (FOL) syntax.
+# Each non-comment, non-blank line is a single FOL expression.
+# Lines beginning with # are ignored by the loader.
+#
+# This KB is modelled on the astronomy example in the sample
+# conversation log (Task-B_sample_KB___conversation_log.pdf).
+# That example used: star(Sun), planet(p)->-star(p), orbits(Moon,Earth)
+# This KB uses the same structural approach but for gym training.
+#
+# Predicates used:
+#   compound_exercise(x)       - x is a compound (multi-joint) exercise
+#   isolation_exercise(x)      - x is an isolation (single-joint) exercise
+#   strength_equipment(x)      - x is strength/resistance equipment
+#   cardio_equipment(x)        - x is cardiovascular equipment
+#   lower_body_exercise(x)     - x primarily trains the lower body
+#   upper_body_exercise(x)     - x primarily trains the upper body
+#   full_body_exercise(x)      - x trains the whole body
+#   strength_training(x)       - x develops muscular strength
+#   builds_muscle(x)           - x is effective for hypertrophy
+#   burns_calories(x)          - x is effective for calorie burning
+#   requires_warmup(x)         - x requires a proper warm-up
+# ============================================================
+
+# --- Ground facts: Exercises ---
+compound_exercise(squat)
+compound_exercise(deadlift)
+compound_exercise(benchpress)
+compound_exercise(overheadpress)
+compound_exercise(pullup)
+compound_exercise(barbellrow)
+isolation_exercise(bicep_curl)
+isolation_exercise(lateral_raise)
+isolation_exercise(leg_extension)
+isolation_exercise(tricep_pushdown)
+
+# --- Ground facts: Which body region exercises target ---
+lower_body_exercise(squat)
+lower_body_exercise(deadlift)
+lower_body_exercise(lunges)
+upper_body_exercise(benchpress)
+upper_body_exercise(overheadpress)
+upper_body_exercise(pullup)
+upper_body_exercise(barbellrow)
+full_body_exercise(deadlift)
+full_body_exercise(thruster)
+
+# --- Ground facts: Equipment ---
+strength_equipment(barbell)
+strength_equipment(dumbbell)
+strength_equipment(kettlebell)
+strength_equipment(cableMachine)
+cardio_equipment(treadmill)
+cardio_equipment(rowingMachine)
+cardio_equipment(stationaryBike)
+
+# --- Rules (implications) ---
+# Compound exercises develop strength
+compound_exercise(x) -> strength_training(x)
+
+# Strength training builds muscle
+strength_training(x) -> builds_muscle(x)
+
+# Compound exercises also build muscle directly (via overload)
+compound_exercise(x) -> builds_muscle(x)
+
+# All exercises that build muscle require a proper warm-up
+builds_muscle(x) -> requires_warmup(x)
+
+# Cardio equipment burns calories
+cardio_equipment(x) -> burns_calories(x)
+
+# Isolation exercises are NOT compound exercises
+# (Stated directly as facts rather than implications to keep the
+#  KB simple and compatible with NLTK's resolution prover)
+
+Trains(squat,quadriceps)
+Trains(squat,glutes)
+Trains(deadlift,hamstrings)
+Trains(bench_press,chest)
+Trains(pull_up,lats)
+Trains(push_up,chest)
+Trains(plank,core)
